@@ -6,16 +6,16 @@
 - Класс должен иметь метод decrement, который уменьшает counter на 1 и возвращает результат
  */
 export class Counter {
-    counter: number = 0;
-    constructor(start: number) {
+    counter: number;
+    constructor(start: number = 0) {
         this.counter = start;
     }
 
-    increment()  {
+    increment(): void  {
         this.counter += 1;
     }
 
-    decrement() {
+    decrement(): void {
         this.counter -= 1;
     }
 }
